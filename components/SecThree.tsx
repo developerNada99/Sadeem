@@ -4,8 +4,11 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const SecThree = () => {
-  const scrollToContact = () => {
-    window.location.href = '/contact'
+  const whatsappNumber = '01152855971'
+  
+  const handleWhatsApp = () => {
+    // فتح محادثة واتساب مباشرة
+    window.open(`https://wa.me/${whatsappNumber}`, '_blank')
   }
 
   return (
@@ -50,7 +53,7 @@ const SecThree = () => {
             لأن مستقبلك يبدأ من هنا.
           </motion.p>
 
-          {/* زر التواصل */}
+          {/* زر التواصل مع واتساب */}
           <motion.button
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -58,7 +61,7 @@ const SecThree = () => {
             viewport={{ once: true }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={scrollToContact}
+            onClick={handleWhatsApp}
             className='group relative px-8 py-4 md:px-10 md:py-5 bg-transparent border-2 border-amber-500 rounded-full overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/20'
           >
             <span className='relative z-10 text-amber-500 font-bold text-lg md:text-xl group-hover:text-white transition-colors duration-300'>
