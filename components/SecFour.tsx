@@ -45,10 +45,7 @@ const SecFour = () => {
           viewport={{ once: true }}
           className='text-center mb-12 md:mb-16'
         >
-          <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4'>
-            خدماتنا العقارية
-          </h2>
-          <div className='w-24 h-1 bg-amber-500 mx-auto'></div>
+        
           <p className='text-white/60 text-lg md:text-xl mt-6 max-w-2xl mx-auto'>
             نقدم لكم مجموعة متكاملة من الخدمات العقارية بكل احترافية وثقة
           </p>
